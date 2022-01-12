@@ -1,0 +1,12 @@
+title fullstackopen 0.5 
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin->Selain: HTML-koodi
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin->Selain: main.css
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Palvelin->Selain: spa.js
+
+note left of Selain: Selain suorittaa palvelimelta tulleen js tiedoston.
+Selain->Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin->Selain: {content: "Testausta", date: "2022-01-11T11:18:11.896Z"}, {".."}
+note left of Selain: Selain hakee palvelimelta data.json tiedoston ja tulostaa elementit listana.
