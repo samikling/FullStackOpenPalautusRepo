@@ -1,0 +1,13 @@
+title fullstackopen 0.6 
+note over Selain: 
+Selain suorittaa js koodia, joka ottaa kirjoitetun viestin
+ja lisää muistiinpanojen listalle.
+Muistiinpanolista renderöidään päivitettynä.
+end note
+Selain->Palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa {content: "TestingSPA", date: "2022-01-12T17:38:23.370Z"}
+Palvelin->Selain: 201 {"message":"note created"}
+note over Palvelin
+Tämän jälkeen selain lähettää palvelimelle vain yhden post-
+pyynnön joka sisältää muistiinpanon. Tämä tallennetaan palvelimelle.
+Palvelin palauttaa vain statuksen 201 viestillä: "note created".
+end note
